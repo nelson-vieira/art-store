@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sti.art_store">
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="Art Store"
+        android:label="Art Store+"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -1,7 +1,12 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:art_store/widgets/text_field_input.dart';
 import 'package:art_store/utilities/colors.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:image_picker/image_picker.dart';
+
+import '../utilities/image_picker.dart';
 
 class Register extends StatefulWidget {
   const Register({Key? key}) : super(key: key);
@@ -15,6 +20,7 @@ class _RegisterState extends State<Register> {
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _bioController = TextEditingController();
   final TextEditingController _usernameController = TextEditingController();
+  // Uint8List? _image;
 
   @override
   void dispose() {
@@ -24,6 +30,13 @@ class _RegisterState extends State<Register> {
     _bioController.dispose();
     _usernameController.dispose();
   }
+
+  // void selectImage() async {
+  //   Uint8List img = await pickImage(ImageSource.gallery);
+  //   setState(() {
+  //     _image = img;
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -43,11 +56,16 @@ class _RegisterState extends State<Register> {
               const SizedBox(height: 10),
               Stack(
                 children: [
-                  const CircleAvatar(
-                    radius: 64,
-                    backgroundImage: NetworkImage(
-                        "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
-                  ),
+                  // _image != null
+                  // //     ? CircleAvatar(
+                  //         radius: 64,
+                  //         backgroundImage: MemoryImage(_image!),
+                  //       )
+                  //     : const CircleAvatar(
+                  //         radius: 64,
+                  //         backgroundImage:
+                  //             NetworkImage('assets/default_profile.png'),
+                  //       ),
                   Positioned(
                       bottom: -10,
                       left: 80,

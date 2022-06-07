@@ -25,7 +25,7 @@ class ArtStore extends StatelessWidget {
       //   mobileScreenLayout: MobileScreenLayout(),
       //   webScreenLayout: WebScreenLayout(),
       // ),
-      home: Register(),
+      home: Login(),
       // home: Scaffold(
       //   body: Container(
       //     padding: const EdgeInsets.all(12),

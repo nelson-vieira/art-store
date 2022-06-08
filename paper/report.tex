@@ -53,32 +53,65 @@ Funchal, Portugal \\
 \maketitle
 
 \begin{abstract}
- \\Utilizar arte para decorar espaços, tanto privados, como uma casa, ou público não é algo novo. Existem vários leilões para compra de arte, mas estes normalmente não são acessíveis a todos devido aos preços elevados das obras nestes e também dificuldade de sequer encontrá-los. Isto normalmente leva a que a melhor opção para compra de arte seja em lojas de decoração, mas esta arte costuma ser algo produzido em massa. Neste artigo iremos falar de uma aplicação que pretende resolver estes problemas, oferecendo uma loja fácil de aceder onde pessoas do público geral possam comprar artigos de arte a preços acessíveis, mas também uma plataforma que permita a artistas locais e pouco conhecidos a arrancarem a sua carreira e criarem um nome para si mesmos.
+Utilizar arte para decorar espaços, tanto privados, como uma casa ou um 
+restaurante, ou público, como uma praça, não é algo novo. 
+Existem vários leilões para compra de arte, mas estes normalmente 
+não são acessíveis a todos devido aos preços elevados das obras. 
+Isto normalmente leva a que a melhor opção 
+para compra de arte seja em lojas de decoração, mas esta arte costuma ser algo 
+produzido em massa. Desenvolvemos uma aplicação que pretende 
+resolver estes problemas, oferecendo uma loja fácil de aceder onde pessoas 
+do público geral possam comprar artigos de arte a preços acessíveis, mas 
+também uma plataforma que permita a artistas locais e pouco conhecidos a 
+arrancarem a sua carreira e criarem um nome para si mesmos.
 \end{abstract}
 
 \begin{IEEEkeywords}
-
+Flutter, dart, aplicação móvel, venda online, loja de arte
 \end{IEEEkeywords}
 
 \section{Introdução}
 
-\IEEEPARstart{A}rte, do latin ars que significa técnica e/ou habilidade, pode ser entendida 
-como a atividade humana ligada às manifestações de ordem estética ou comunicativa, realizada 
-por meio de uma grande variedade de linguagens, tais como: arquitetura, desenho, escultura, 
-pintura, escrita, música, dança, teatro e cinema, em suas variadas combinações. \cite{wikiarte}
+\IEEEPARstart{A}{}rte, do latin \textit{ars} que significa técnica e/ou 
+habilidade, pode ser entendida como a atividade humana ligada às 
+manifestações de ordem estética ou comunicativa, realizada 
+por meio de uma grande variedade de linguagens, tais como: 
+arquitetura, desenho, escultura, 
+pintura, escrita, música, dança, teatro e cinema, em suas 
+variadas combinações. \cite{wikiarte}
 
-`Desde sempre a arte funcionou como espelho da sociedade, 
-acompanhando cada contemporaneidade ao longo dos tempos, deixando registado na sua obra os diferentes 
-momentos vividos, com intensidade e questionamento, como um diário pessoal da humanidade, 
-desde que o Homem se pensou como tal.` \cite{patrimonio}
+"Desde sempre a arte funcionou como espelho da sociedade, 
+acompanhando cada contemporaneidade ao longo dos tempos, 
+deixando registado na sua obra os diferentes 
+momentos vividos, com intensidade e questionamento, como 
+um diário pessoal da humanidade, 
+desde que o Homem se pensou como tal." \cite{patrimonio}
 
-Como referido, arte pode ter várias formas e é bastante comum uma pessoa decorar a sua casa com objetos artísticos, como quadros ou estátuas. Normalmente este tipo de arte é encontrado em lojas mas são apenas itens produzidos em massa. Isto cria um problema para quem gosta de ter algo único. Não é fácil encontrar um lugar para arranjar artigos únicos atualmente. Maior parte desta arte é vendida por leilões, mas estes leilões costumam vender arte de artistas já conhecidos, o que leva a preços bastante elevados, algo que maior parte das pessoas não consegue comprar. Isto em si também torna difícil de novos talentos emergirem e exporem a sua arte, sendo que maior parte dos artistas novos/menos conehcidos vendem a sua arte em feiras ou pelas redes sociais ou então acabam por doar para exposições, nunca recebendo exposição merecida.
+Como referido, arte pode ter várias formas e é bastante comum 
+uma pessoa decorar a sua casa com objetos artísticos, como 
+quadros ou estátuas. Normalmente este tipo de arte é encontrado 
+em lojas mas são apenas itens produzidos em massa. Isto cria um 
+problema para quem gosta de ter algo único. Não é fácil encontrar 
+um lugar para arranjar artigos únicos atualmente. Maior parte 
+desta arte é vendida por leilões, mas estes leilões costumam 
+vender arte de artistas já conhecidos, o que leva a preços 
+bastante elevados, algo que maior parte das pessoas não consegue 
+comprar. Isto em si também torna difícil de novos talentos emergirem 
+e exporem a sua arte, sendo que maior parte dos artistas novos/menos 
+conehcidos vendem a sua arte em feiras ou pelas redes sociais ou 
+então acabam por doar para exposições, nunca recebendo exposição 
+merecida.
 
-É com isto que decidimos criar esta aplicação, Art Store+. Com esta aplicação pretendemos criar uma loja online onde artistas podem expor as suas criações e começar uma carreira e também pessoas do público geral podem procurar e comprar arte para decoração ou coleção a preços acessíveis.
+É com isto que decidimos criar esta aplicação, Art Store+. Com 
+esta aplicação pretendemos criar uma loja online onde artistas 
+podem expor as suas criações e começar uma carreira e também 
+pessoas do público geral podem procurar e comprar arte para 
+decoração ou coleção a preços acessíveis.
 
 
 \subsection{Formas de arte}
-As artes são, muitas vezes, divididas em categorias específicas, tais como artes decorativas, 
+As artes são, muitas vezes, divididas em categorias específicas, 
+tais como artes decorativas, 
 artes plásticas ou visuais, artes do espectáculo, ou literatura.
 
 \subsection{Objetivos}
@@ -91,7 +124,11 @@ artes plásticas ou visuais, artes do espectáculo, ou literatura.
 
 \section{Métodos e Metadologias}
 
-O trabalho descrito neste artigo pretende 
+Para este projeto foi-nos proposto desenvolver uma aplicação móvel que 
+permita visualizar e navegar conteúdo, realizar um trabalho de pesquisa 
+sobre funcionalidades básicas que a aplicação deve conter, e realizar testes 
+de usabilidade. Uma condição para a criação desta aplicação era a utilização 
+do \textit{kit} de desenvolvimento de software Flutter.
 
 \subsection{Tecnologias utilizadas}
 
@@ -100,11 +137,12 @@ A aplicação que propomos, é uma aplicação que foi desenvolvida utilizando:
 \begin{itemize}
     \item Figma - software de prototipagem;
     \item FlutterFlow - aplicação web para desenvolvimento de aplicações à base de Flutter;
-    \item Flutter - linguagem para desenvolvimento de aplicações móveis;
+    \item Flutter - linguagem para desenvolvimento de aplicações;
     \item Firebase - plataforma para desenvolvimento de aplicações, atualmente pertencente à Google;
     \item Firestore - base de dados do Firebase;
-    \item VSCode - IDE utilizado para escrita do código;
+    \item Visual Studio Code - ambiente de desenvolvimento utilizado para escrita do código;
     \item Git - plataforma de controlo de versões;
+    \item GitHub - plataforma de controlo de versões online para trabalho em equipa.
 \end{itemize}
 
 Primeiramente, foram realizados alguns esboços sobre qual poderia ser a aparência da aplicação. A figura \ref{fig:sketches} 

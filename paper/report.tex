@@ -16,9 +16,17 @@
 \usepackage{graphicx} %package to manage images
 \graphicspath{ {./images/} }
 
-
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\makeatletter
+\newcommand{\linebreakand}{%
+\end{@IEEEauthorhalign}
+\hfill\mbox{}\par
+\mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+\makeatother
+
 \begin{document}
 
 \title{Online Store Application: Art Store+}
@@ -34,7 +42,7 @@ Funchal, Portugal \\
 \textit{Universidade da Madeira}\\
 Funchal, Portugal \\
 2080511@student.uma.pt}
-\and
+\linebreakand
 \IEEEauthorblockN{3\textsuperscript{rd} Luís Olim}
 \IEEEauthorblockA{\textit{Faculdade de Ciências Exatas e da Engenharia} \\
 \textit{Universidade da Madeira}\\

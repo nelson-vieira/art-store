@@ -227,7 +227,36 @@ os contactos do utilizador, bem como as operações Mudar palavra-passe, Editar 
     \label{fig:profilevs}
 \end{figure}
 
-\subsection{Testes}
+As páginas consideradas mais vitais para a aplicação são a página principal e a página da obra.
+
+Para a página principal, optamos por um layout grid tipo galeria de imagens, nos quais em cada 
+área temos informação pertinente de cada obra, ou seja, uma imagem da obra, o nome da obra e o autor.
+A figura \ref{fig:mainpage} ilustra a página principal da aplicação, onde fazemos as listagem das obras 
+à venda.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.4]{mainpage.png}
+    \caption{Página principal}
+    \label{fig:mainpage}
+\end{figure}
+
+A página da obra, optou-se por um layout mais simplificado, no qual se dá destaque às informações 
+essenciais da obra, nomeadamente, uma imagem no qual é possível expandir a mesma para melhor visualização, 
+o nome da obra, o autor da obra, a data na qual a mesma foi publicada, detalhes da mesma, por exemplo, 
+tela a óleo, o preço e no final da página uma descrição da obra. Como o intuito da aplicação é 
+a compra das obras, adicionou-se dois butões, um para comprar e outro para adicionar à lista dos favoritos.
+A figura \ref{fig:artpiece} ilustra uma das páginas de uma das obras. É de notar que a página 
+é semelhante para as restantes obras.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.4]{artpiecepage-mona-lisa.png}
+    \caption{Página da obra Mona Lisa}
+    \label{fig:artpiece}
+\end{figure}
+
+\subsection{Testes de Usabilidade}
 
 Relativamente aos testes da aplicação, testámos utilizando uma versão de produção da app. 
 Realizámos os testes com sete utilizadores e depois dos testes foi pedido a estes que 
@@ -299,6 +328,12 @@ recebe inputs e não é possível realizar pesquisa na página de pesquisa.
 
 
 \section{Conclusão e Trabalho Futuro}
+
+Neste trabalho conseguimos criar uma aplicação que cumpre os nossos objetivos. Também conseguimos através dos testes realmente ver que as pessoas não têm muita facilidade a encontrar lugares para comprar arte, sendo que maior parte deles não sabiam de nenhum lugar para comprar e os que sabiam mencionaram que estes lugares não eram fáceis de encontrar.
+
+Trabalho futuro para este projeto inclui trabalho na base de dados, implementar filtros/pesquisa para as obras de arte, o planeado sendo através de tags para o tipo de arte e também pesquisa pelo artista em si, adicionar mais peças de arte, para o protótipo utilizámos peças conhecidas que nunca iriam estar no produto final, simplesmente utilizámos estas pois são reconhecíveis e assim os utilizadores dos testes iriam entender imediatamente o objetivo da app e por fim implementar/melhorar páginas de artistas.
+
+Concluindo, conseguimos desenvolver um protótipo com as funcionalidades principais da aplicação e que mostra o que esta irá fazer. A partir dos testes também conseguimos perceber melhor o que a app deve de fazer e mostrar ao utilizador e também, a partir dos testes, vimos que estamos no caminho certo no desenvolvimento desta aplicação.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
